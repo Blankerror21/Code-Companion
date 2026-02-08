@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="style.css"><!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      max-width: 300px;
+      margin: auto;
+    }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    #formData {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Information Form</h1>
+  <form id="userForm">
+    <label for="nameInput">Name:</label><br>
+    <input type="text" id="nameInput" name="name"><br>
+    <label for="emailInput">Email:</label><br>
+    <input type="email" id="emailInput" name="email"><br>
+    <button type="submit" id="btnSubmit">Submit</button>
+  </form>
+  <div id="formData"></div>
+
+  <script src="/src/script.js"></script>
+</body>
+</html>
